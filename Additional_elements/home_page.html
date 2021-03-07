@@ -1,0 +1,68 @@
+<!--=========================================================== 
+  Home Page content
+    ●Create a page with two columns
+    ●Width of the left column is 300px
+    ●Right column stretches to cover the rest of the screen
+
+    ●Left column content
+        ○Logo image with height set to 250px
+        ○Under the logo, there should be a list of links
+        ○One of the links should be "Contact"
+        ○The link should link to "./contact.html" page
+
+    ●Right column content
+    ●There should be two posts in form of groups
+    ●The first group content:
+        ○Title
+        ○Embedded YouTube video
+    ●The second group content:
+        ○Title
+        ○Video (HTML5) that you will find on the web  
+ ============================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Home page</h1>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th width="300px">Left Column</th>
+                <th width="100%" colspan="2">Right Column</th>
+            </tr>
+            <tr>
+                <td><img src="https://cdn-jaguarlandrover.com/api/v1/image/23100/w/1000.jpg" alt="Range Rover"
+                        height="250px"></td>
+                <td style="text-align: center;"><h1>Title 1</h1></td>
+                <td style="text-align: center;"><h1>Title 2</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="https://borisperkovic.rs/BorisTech/Po%C4%8Detna">BorisCars</a></li>
+                        <li><a href="https://borisperkovic.rs/BorisTech/Po%C4%8Detna">BorisTech</a></li>
+                    </ul>
+                </td>
+                <td><iframe width="100%" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></td>
+                <td>
+                    <video width="100%" height="315" controls>
+                        <source src="video-2016-02-06-13-38-03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

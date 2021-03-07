@@ -1,0 +1,74 @@
+<!-- ==================================== 
+  Table Basics
+  ●	Create a table containing phone specification data
+  ●	Each row should represent a new phone
+  ●	Content of the first column is the phone name
+  ●	The second column should contain the phone image (height of 100px)
+  ●	The third column should contain the amount of ram
+  ●	The fourth column should contain camera information
+  ●	The fifth column should contain info about internal memory
+  ●	Table should have at least three rows!
+  ●	Add column title for each column using th
+
+
+    Merging cells across rows
+    ●	Add a new column to the table
+    ●	Title of the column should be "External antenna"
+    ●	Merge all cells in this column into one cell except the column title
+    ●	Value inside the cell should be something like "NO"
+
+    Merging columns
+    ●	Add a row in the table before the first row
+    ●	The new row should contain one cell stretching across all columns
+    ●	Content of the cell should be something like "Specification"
+=========================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+ 
+  <!-- Mobile -->
+  <table border="1">
+    <tr>
+      <th colspan="6">Mobile Phones</th>
+    </tr>
+    <th>Model</th>
+    <th>Image</th>
+    <th>Ram memory</th>
+    <th>Camera</th>
+    <th>Internal memory</th>
+    <th>External antena</th>
+    <tr>
+      <td>Iphone</td>
+      <td><img src="iphone.jpg" alt="iphone"></td>
+      <td>4gb</td>
+      <td>12mpx</td>
+      <td>64gb</td>
+      <td rowspan="3">NO</td>
+    </tr>
+    <tr>
+      <td>Samsung</td>
+      <td><img src="samsung.jpg" alt="samsung"></td>
+      <td>6gb</td>
+      <td>25mpx</td>
+      <td>124gb</td>
+    </tr>
+    <tr>
+      <td>Huawei</td>
+      <td><img src="huawei.jpg" alt="huawei"></td>
+      <td>6gb</td>
+      <td>48mpx</td>
+      <td>124gb</td>
+    </tr>
+  </table><br><br>
+
+</body>
+
+</html>

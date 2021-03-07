@@ -1,0 +1,57 @@
+<!--===================================================================== 
+  Future layout organization (table in the table)
+  ●	Rearrange paragraphs that you made in the previous example
+  ●	Center column should be split in two columns
+  ●	Even paragraphs should go in the left column and odd ones in the right column
+=======================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- EVEN ODD -->
+  <table border="1">
+    <tr>
+      <th >Some text</th>
+      <th width="960px">Main Title</th>
+      <th >Some text</th>
+    </tr>
+    <tr>
+      <td rowspan="4">Sidebar 1</td>
+      <td><img src="autobiography.jpg" alt="Range Rover" width="960px">
+
+        <!-- Table in table ( inside <td> tag ) -->
+        <table border="1" width="100%" dir="rtl">
+          <tr>
+            <th>Neparni paragrafi</th>
+            <th>Parni paragrafi</th>
+          </tr>
+          <tr>
+            <td><p>Pafagraf 1</p></td>
+            <td><p>Paragraf 2</p></td>
+          </tr>
+          <tr>
+            <td><p>Paragraf 3</p></td>
+            <td><p>Paragraf 4</p></td>
+          </tr>
+          <tr>
+            <td><p>Paragraf 5</p></td>
+            <td><p>Paragraf 6</p></td>
+          </tr>
+        </table>
+
+      </td>
+      <td rowspan="4">Sidebar 2</td>
+    </tr>
+
+  </table>
+</body>
+
+</html>

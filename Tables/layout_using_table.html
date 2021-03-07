@@ -1,0 +1,47 @@
+<!--==================================== 
+  Layout using table (centered column)
+●	Create a three column layout
+●	Center column should be 960px wide
+●	Center column should contain
+-	main title
+-	image (same width as column)
+-	multiple text paragraphs 
+======================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Center -->
+  <table border="1">
+    <tr>
+      <th >Some text</th>
+      <th width="960px">Main Title</th>
+      <th >Some text</th>
+    </tr>
+    <tr>
+      <td rowspan="4">Sidebar 1</td>
+      <td><img src="autobiography.jpg" alt="Range Rover" width="960px"></td>
+      <td rowspan="4">Sidebar 2</td>
+    </tr>
+    <tr>
+      <td><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, facilis.</p></td>
+    </tr>
+    <tr>
+      <td><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, possimus.</p></td>
+    </tr>
+    <tr>
+      <td><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, voluptatum?</p></td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
