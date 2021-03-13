@@ -1,0 +1,77 @@
+<!-- ============================================================= 
+  Opacity VS RGBA
+  ●	Use the previously created HTML structure
+  ●	Apply 50% opacity to the first element
+  ●	Set bg-color with 50% transparency (rgba) on the second element
+  ●	Add picture to the div element that has opacity defined
+  ●	Add picture to the div element that has rgba defined
+ ============================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .one {
+      padding: 10px;
+      background-color: #ccc;
+      color: gray;
+      opacity: 50%;
+    }
+
+    .two {
+      padding: 10px;
+      background-color: rgba(105, 105, 105, .5);
+      color: #ccc;
+    }
+
+    .three {
+      padding: 10px;
+      background-color: firebrick;
+      color: whitesmoke;
+
+    }
+
+    img {
+      width: 450px;
+      height: auto;
+    }
+
+    .div1 {
+      opacity: 50%;
+
+    }
+
+    .div2 {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum sunt consectetur sequi
+    tenetur nulla impedit deserunt. Culpa odio necessitatibus sunt quibusdam iusto amet vel ut? Eius blanditiis
+    architecto odit laborum nobis minus quaerat fuga, amet recusandae, cumque iste est.</p>
+
+  <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, necessitatibus quia commodi enim unde
+    quo voluptate perspiciatis aliquam eos eum facere debitis officia. Voluptate, voluptates. Fugiat est, quia enim
+    officia ipsum, veritatis ullam veniam excepturi officiis, minus aspernatur voluptatem dolorum!</p>
+
+  <div class="div1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dicta dolore voluptates nihil quisquam rem ad
+      corrupti culpa ullam rerum!</p>
+    <img src=https://www.britishmotors.rs/wp-content/uploads/2018/03/range-rover-sport-s.jpg" alt="Range Rover">
+  </div>
+  <div class="div2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dicta dolore voluptates nihil quisquam rem ad
+      corrupti culpa ullam rerum!</p>
+    <img src="https://www.britishmotors.rs/wp-content/uploads/2018/03/range-rover-sport-s.jpg" alt="Range Rover">
+  </div>
+
+</body>
+
+</html>

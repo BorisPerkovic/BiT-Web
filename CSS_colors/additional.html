@@ -1,0 +1,86 @@
+<!-- ============================================================= 
+  Additional
+  ●	Create a table with five columns and three rows
+  ●	Each column should have different background color
+  ●	Colors of the first two columns should be defined using the following color names:
+    ○	AliceBlue
+    ○	HotPink
+ ============================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 40%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    .col1 {
+      background: aliceblue;
+    }
+
+    .col2 {
+      background: hotpink;
+    }
+
+    .col3 {
+      background: tomato;
+    }
+
+    .col4 {
+      background: lime;
+    }
+
+    .col5 {
+      background: aqua;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table border="1">
+    <tr>
+      <th class="col1">Car</th>
+      <th class="col2">Country</th>
+      <th class="col3">Fuel</th>
+      <th class="col4">Speed</th>
+      <th class="col5">Transmision</th>
+    </tr>
+    <tr>
+      <td class="col1">VW</td>
+      <td class="col2">Germany</td>
+      <td class="col3">Diesel</td>
+      <td class="col4">260 km/h</td>
+      <td class="col5">6 speed gear</td>
+    </tr>
+    <tr>
+      <td class="col1">BMW</td>
+      <td class="col2">Germany</td>
+      <td class="col3">Gasoline</td>
+      <td class="col4">285 km/h</td>
+      <td class="col5">8 speed gear</td>
+    </tr>
+    <tr>
+      <td class="col1">Nissan</td>
+      <td class="col2">Japan</td>
+      <td class="col3">Gasoline</td>
+      <td class="col4">235 km/h</td>
+      <td class="col5">6 speed gear</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
