@@ -1,0 +1,47 @@
+<!--============================================================= 
+  ●	Use HTML/CSS from the previous example
+  ●	Apply global font size/weight
+  ●	Override the global font for the first paragraph (apply some other font)
+  ●	Apply “oblique” style to the text in the second paragraph
+  ●	Create a span element somewhere inside the third paragraph
+  ●	Increase weight of the text inside the span and make it italic
+================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .first {
+      font-size: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .second {
+      font-style: oblique;
+    }
+    .third span{
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quam similique voluptatibus! Sed rerum quidem eni qui necessitatibus. Libero iste omnis tenetur quaerat impedit excepturi maiores!</p>
+
+  <p class="second">Lorem ipsum, dolor sit amet consectetur molestiae eligendi veniam laboriosam adipisicing elit. Et dolores quidem illum, nisi nesciunt, repellat ea vel id fugiat repellendus, harum ipsa deserunt deleniti iste aut quisquam rem animi voluptas.</p>
+
+  <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse <span>&quot;molestiae eligendi veniam laboriosam&quot;</span> laboriosam atque nesciunt minima veniam voluptas? Reprehenderit obcaecati harum nobis libero nemo, nihil laboriosam voluptas nulla? Tempora deleniti ratione voluptatibus praesentium!</p>
+
+</body>
+
+</html>
