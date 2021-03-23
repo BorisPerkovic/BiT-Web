@@ -1,0 +1,75 @@
+<!-- ============================================================= 
+Hide/Show | Box Shadows | Rounded Corners
+
+  ●	Hide/Show 
+  ○	Hide the middle paragraph from the previous example
+  ○	The third paragraph should be hidden
+
+  ●	Box Shadow
+  ○	Add a main title on the page using h1 element
+  ○	Set width of the title to 960px
+  ○	Position the heading box to the center of the page
+  ○	The text in the heading should be centered 
+  ○	Add top and bottom padding of 50px and do that for the top/bottom margins also
+  ○	Define box background color, and font color
+  ○	Include some fancy font for the title
+  ○	Apply box shadow to the heading box
+
+  ●	Rounded Corners
+  ○	Round the corners on the heading box (try different radiuses)
+============================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    p {
+      padding: 10px;
+      background-color: yellow;
+      border-width: 5px;
+    }
+    .first, .third {
+      border: dashed red;
+      padding: 50px;
+    }
+    .second {
+      border: solid green;
+      padding-top: 50px;
+    }
+    .third {
+      display: none;
+    }
+    .title {
+      font-family: 'Raleway', sans-serif;
+      width: 960px;
+      padding: 50px 0px;
+      margin: 50px auto;
+      text-align: center;
+      background-color: red;
+      color: #fff;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      border-radius: 10px 5px 25px 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="title">Some Tittle</h1>
+  <p class="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque magnam quae dolore placeat vero quaerat saepe dolorum, repudiandae totam eum consequuntur dolores, ipsum alias quisquam molestias architecto accusantium iure iste.</p>
+
+  <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum ipsam doloribus iure asperiores earum, molestias veniam dicta nihil? Molestias earum eum saepe esse aliquam soluta modi a nam maiores?</p>
+
+  <p class="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, doloremque. Minus dolore porro excepturi hic ipsam quibusdam corporis magnam ducimus accusantium, consequuntur dicta illo laudantium tempore tempora, deleniti aliquid delectus.</p>
+
+</body>
+
+</html>
