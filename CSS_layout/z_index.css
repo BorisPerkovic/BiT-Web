@@ -1,0 +1,46 @@
+.first,
+.second,
+.third {
+  width: 200px;
+  height: 200px;
+}
+.first {
+  background: orange;
+}
+.second {
+  background: aquamarine;
+}
+.third {
+  background: blueviolet;
+}
+.fifth {
+  position: relative;
+  top: -130px;
+  left: 5%;
+  z-index: 1;
+}
+.sixth {
+  position: relative;
+  top: -230px;
+  left: 10%;
+  z-index: 1;
+}
+.absolute_divs {
+  position: relative;
+}
+.seventh  {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.eight  {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  z-index: 1;
+}
+.nineth {
+  position: absolute;
+  top: 200px;
+  right: 10%;
+}

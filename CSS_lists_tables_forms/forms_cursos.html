@@ -1,0 +1,83 @@
+<!-- ============================================================= 
+ Forms | Cursor
+  Form Elements Style
+  ○	Include the normalizer on page to unify default styles
+  ○	Style the form until it looks like the form shown in the picture
+
+  ●	Cursor
+  ○	Set the cursor to look different when hovering over different form elements
+  ○	Use a custom image for the cursor when hovering over the submit button
+============================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <title>Document</title>
+  <style>
+    .wrapper{
+      width: 300px;
+      margin: 10px auto;
+      background-color: lightgray;
+      padding: 40px;
+      align-items: center;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+    }
+    form span{
+      color: rgb(226, 167, 17);
+    }
+    input {
+      width: 100%;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div>
+    <h1>Form<span>GET</span></h1>
+    <hr>
+  
+    <form action="" action="GET" id="form">
+  
+      <label for="full_name">
+        Full Name
+        <input type="text" name="full_name" id="full_name">
+      </label><br><br>
+  
+      <label for="email">
+        Email
+        <input type="email" name="email" id="email">
+      </label><br><br>
+  
+      <label for="contact">
+        Contact
+        <input type="text" name="contact" id="contact">
+      </label><br><br>
+  
+      <label for="address">
+        Address
+        <input type="text" name="address" id="address">
+      </label><br><br>
+  
+      <button id="btn">Submit</button>
+  
+    </form>
+  </div>
+
+</div>
+
+  
+
+</body>
+
+</html>
