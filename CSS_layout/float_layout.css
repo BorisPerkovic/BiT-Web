@@ -6,6 +6,7 @@ body {
   font-family: 'Lexend', sans-serif;
   margin: 0;
   padding: 10px;
+  font-size: 16px;
   background: rgb(231, 228, 228);
 
 }
@@ -15,6 +16,8 @@ body {
   margin: 0 auto;
   background: #fff;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #555555;
 }
 
 h1 {
@@ -110,6 +113,13 @@ h1 {
   background: rgb(245, 209, 5);
 }
 
+.first_colored_div,
+.second_colored_div,
+.third_colored_div,
+.fourth_colored_div {
+  border-radius: 5px;
+}
+
 .text {
   text-align: left;
 }
@@ -130,6 +140,7 @@ h1 {
   background: rgb(48, 48, 66);
   color: #fff;
 }
-footer .container {
+.footer .container {
   background: rgb(48, 48, 66);
+  box-shadow: none;
 }
