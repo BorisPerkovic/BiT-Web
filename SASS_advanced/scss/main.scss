@@ -1,0 +1,53 @@
+$active: yellow;
+$visited: orange;
+$color: green;
+$font-size: 16px;
+$integer: 4;
+
+@mixin  directive($integer) {
+  @if $integer == 1 {
+    background-color: $active;
+  }
+  @else if $integer == 2 {
+    background-color: $visited;
+  }
+  @else if $integer == 3 {
+    background-color: $color;
+  }
+  @else {
+    background-color: aqua;
+  }
+}
+
+
+.important {
+  font-weight: bold;
+}
+
+a {
+  padding: 20px;
+  margin: 10px; 
+  color: #000;  
+  text-decoration: none;
+  background-color: $color;
+  &:visited{
+    background-color: $visited;
+  }
+  &:active {
+    background-color: $active;
+  } 
+}
+
+p {
+  @include directive($integer);
+}
+
+.par-1 {
+  font-size: $font-size;
+}
+@for $i from 2 through 4 {
+  .par-#{$i} {
+    $font-size: $font-size + 2px;
+    font-size: $font-size;
+  }
+}

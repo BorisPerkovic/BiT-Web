@@ -1,0 +1,23 @@
+.first {
+  border: 1px solid black;
+}
+
+.first p {
+  color: red;
+  font-size: 18px;
+}
+
+.second {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.second p {
+  color: lime;
+}
+
+.second p:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

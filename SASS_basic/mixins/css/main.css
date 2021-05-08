@@ -1,0 +1,22 @@
+.text-shadow, .second {
+  text-shadow: 2px 2px orange;
+  background-color: #ccc; }
+
+.box-shadow, .third {
+  box-shadow: 5px 10px #888;
+  color: blue; }
+
+p {
+  width: 940px;
+  margin: 20px auto; }
+
+.first {
+  border: 1px solid red; }
+
+.second {
+  border: 1px solid blue; }
+
+.third {
+  border: 1px solid green; }
+
+/*# sourceMappingURL=main.css.map */

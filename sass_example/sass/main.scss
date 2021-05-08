@@ -1,0 +1,22 @@
+$red-color: rgb(255, 0, 0);
+$green-color: rgb(0, 255, 0);
+$common-size: 18px;
+
+.first {
+  border: 1px solid black;
+  p {
+    color: $red-color;
+    font-size: $common-size;
+  }
+}
+
+.second {
+  padding: 20px;
+  border: 1px solid black;
+  p {
+    color: $green-color;
+    &:hover{
+      color: $red-color;
+    } 
+  }
+}
