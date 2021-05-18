@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../vendor/fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-bold";
+  src: url("../vendor/fonts/Lato-Bold.ttf");
+  font-weight: bold;
+}
+@import "variables";
+@import "mixins";
+@import "star";
+
+body {
+  font-family: "Lato-regular";
+}
+
+/* =======================================
+  NAV-BAR SECTION
+======================================= */
+
+.navbar {
+  background-color: $blueish;
+  .container-sm {
+    padding-left: 0;
+  }
+  a:hover {
+    color: $greenish !important;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* =======================================
+  HERO SECTION
+======================================= */
+
+#home {
+  background-color: $greenish;
+}
+
+/* =======================================
+  ABOUT SECTION
+======================================= */
+
+#about {
+  background-color: $greenish;
+}
+
+/*=======================================
+  CONTACT SECTION
+=======================================*/
+
+#contact .form-control{
+  color: $contactColor !important;
+  font-family: "Lato-bold";
+}
+
+/*=======================================
+  FOOTER SECTION
+=======================================*/
+
+#footer {
+  background-color: $blueish;
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-linkedin-in,
+  .fa-google-plus-g {
+    color: #fff;
+    font-size: 24px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+  .fa-facebook-f {
+    padding: 15px 20px;
+  }
+  .fa-google-plus-g {
+    padding: 15px 12px;
+  }
+  .fa-twitter {
+    padding: 15px;
+  }
+  .fa-linkedin-in {
+    padding: 15px 17px;
+  }
+  .fa-facebook-f:hover {
+    background-color: $fbColor;
+    @include transition(all 0.5s);
+    @include rotate(360deg);
+  }
+  .fa-google-plus-g:hover {
+    background-color: $gPlusColor;
+    @include transition(all 0.5s);
+    @include rotate(360deg);
+  }
+  .fa-twitter:hover {
+    background-color: $twitterColor;
+    @include transition(all 0.5s);
+    @include rotate(360deg);
+  }
+  .fa-linkedin-in:hover {
+    background-color: $linkInColor;
+    @include transition(all 0.5s);
+    @include rotate(360deg);
+  }
+  .thanks {
+    color: $contactColor;
+  }
+
+}
+
+.btn {
+  background-color: $greenish;
+  &:hover {
+    color: black !important;
+    background-color: $hoverBtn !important;
+    border-color: black !important;
+    transition: all 0.4s ease-in-out;
+  }
+}

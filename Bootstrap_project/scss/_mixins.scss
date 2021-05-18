@@ -1,0 +1,11 @@
+
+@mixin rotate($degree) {
+  -webkit-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  transform: rotate($degree);
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}

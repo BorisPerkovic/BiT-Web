@@ -1,0 +1,28 @@
+.star-w {
+  display: inline-block;
+  width: 60px;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+.starN-w {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0;
+  position: relative;
+  top: 9px;
+  text-align: center;
+  color: white;
+}
+.star-b {
+  display: inline-block;
+  width: 60px;
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+.starN-b {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0;
+  position: relative;
+  top: 9px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
