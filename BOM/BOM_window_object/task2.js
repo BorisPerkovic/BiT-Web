@@ -49,11 +49,6 @@ function fullUrl() {
   console.log("Parameters of URL: ", window.location.pathname);
 }
 
-/* redirection */
-function browserMaxHeight() {
-  console.log("Browser Max Possible Height: ", window.screen.availHeight);
-}
-
 /*============================== 
 WINDOW LOCAL AND SESSION STORAGE
 ============================== */
