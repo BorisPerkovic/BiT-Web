@@ -1,0 +1,18 @@
+.wrapp {
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.gallery img {
+  width: 33%;
+}
+
+.selected {
+  border: 3px solid rgb(255, 0, 0);
+}
