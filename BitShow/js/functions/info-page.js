@@ -34,10 +34,18 @@ function displayTvList() {
     dataType: "json",
   }).done(function (response) {
 
+    
+
     $season_number.text(`Seassons (${response.length})`);
+
+    function dateFormat(date) {
+      let dateFormat= new Date(date);
+      return `${dateFormat.getDate()}.${dateFormat.getMonth() + 1}.${dateFormat.getFullYear()}`;
+    }
+
     response.forEach(element => {
       if (element.premiereDate !== null && element.endDate !== null) {
-        $show_list.append(`<li>${element.premiereDate} - ${element.endDate}</li>`);
+        $show_list.append(`<li>${dateFormat(element.premiereDate)} - ${dateFormat(element.endDate)}</li>`);
       } else {
         $show_list.append(`<li>TBD</li>`);
       }
