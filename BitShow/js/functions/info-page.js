@@ -1,4 +1,3 @@
-
 /* handlers for info-page */
 let $show_id = localStorage.getItem("id");
 let $show_rating = localStorage.getItem("rating");
@@ -17,7 +16,7 @@ function displayTvShow() {
     type: "GET",
     dataType: "json",
   }).done(function (response) {
-
+    
     $show_title.append(`<p>${response.name} &#11088; ${$show_rating}</p>`);
     $show_img.append(`<img src='${response.image.original}' class='img-fluid' alt='tvShow'>`);
     $show_info.append(response.summary);
@@ -34,12 +33,10 @@ function displayTvList() {
     dataType: "json",
   }).done(function (response) {
 
-    
-
     $season_number.text(`Seassons (${response.length})`);
 
     function dateFormat(date) {
-      let dateFormat= new Date(date);
+      let dateFormat = new Date(date);
       return `${dateFormat.getDate()}.${dateFormat.getMonth() + 1}.${dateFormat.getFullYear()}`;
     }
 
@@ -80,3 +77,4 @@ function displayTvCast() {
 displayTvShow();
 displayTvList();
 displayTvCast();
+$("#spinner").empty();

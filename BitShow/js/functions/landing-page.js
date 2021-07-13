@@ -26,8 +26,9 @@ function loadTvShows() {
       showInstance.addShow($create_shows);
     });
 
+    $("#spinner").empty();
     $main_section.append(showInstance.getShow());
-
+    
     $(".article").click(function () {
       let $show_id = $(this).attr("data-id");
       let $show_rating = $(this).attr("data-rating");
@@ -39,5 +40,6 @@ function loadTvShows() {
   });
 
 }
+
 
 loadTvShows();

@@ -11,8 +11,7 @@ $(".search").keyup(function () {
     }).done(function (response) {
 
       let $html = "";
-
-      console.log(response);
+      
       $search_list.empty();
       $search_list.fadeIn();
       response.forEach(function (element) {
